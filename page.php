@@ -163,8 +163,8 @@
                 echo "<h1 class='text-center title' id='portfolio'><font size='5'>" . $title . "</font></h1>";
                 echo "<h2 class='lead text-center'><font size='2'>来源：" . $author . "&nbsp;&nbsp;&nbsp;" . $date . "</font></h2>";
                 echo "<br>";
-				echo "<br>";
-				while (!feof($file)) {
+		echo "<br>";
+		while (!feof($file)) {
                     echo "<p>" . mb_convert_encoding(fgets($file), 'utf-8', 'gb2312') . "</p>";
                 }
                 fclose($file);
